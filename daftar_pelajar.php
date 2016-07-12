@@ -16,14 +16,7 @@
               
            <form id="daftarpelajar" class="form-horizontal" method="post" 
                  action="process/daftar_pelajar_process.php" enctype="multipart/form-data">   
-<!--               <div class="col-md-2"> 
-                    <a href="" class="thumbnail" name="show_pic" id="show_pic">
-                       <img width="150px" height="200px" src='assets/img/photoblank.jpg'>
-                    </a>
-                <div class="form-group form-group-sm">
-                    <input type="file" id="gambar" name="gambar">
-                </div>              
-               </div> -->
+
               
                 <div class="col-md-12"> 
               
