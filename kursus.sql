@@ -1,0 +1,33 @@
+/*
+SQLyog Community v12.13 (64 bit)
+MySQL - 10.1.9-MariaDB : Database - dbpelajar
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+/*Table structure for table `kursus` */
+
+DROP TABLE IF EXISTS `kursus`;
+
+CREATE TABLE `kursus` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `kod_kursus` varchar(150) DEFAULT NULL,
+  `nama_kursus` varchar(150) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=148 DEFAULT CHARSET=latin1;
+
+/*Data for the table `kursus` */
+
+insert  into `kursus`(`id`,`kod_kursus`,`nama_kursus`) values (1,'1103','Bahasa Melayu'),(2,'1119','Bahasa Inggeris'),(3,'1223','Pendidikan Islam'),(4,'1225','Pendidikan Moral'),(5,'1249','Sejarah'),(6,'1449','Mathematics'),(7,'1511','Science'),(8,'2205','Literature in English'),(9,'2215','Kesusasteraan Melayu'),(10,'2280','Geografi'),(11,'2361','Bahasa Arab'),(12,'2611','Pendidikan Seni Visual'),(13,'2621','Pendidikan Muzik'),(14,'3472','Additional Mathematics'),(15,'3528','Sains Pertanian'),(16,'3529','Pengajian Agroteknologi'),(17,'3754','Pengajian Keusahawanan'),(18,'3755','Perdagangan'),(19,'3756','Prinsip Perakaunan'),(20,'3757','Ekonomi Asas'),(21,'3758','Ekonomi Rumah Tangga'),(22,'3759','Lukisan Kejuruteraan '),(23,'3760','Pengajian Kejuruteraan Mekanikal '),(24,'3761','Pengajian Kejuruteraan Awam '),(25,'3762','Pengajian Kejuruteraan Elektrik dan Elektronik '),(26,'3763','Reka Cipta'),(27,'3764','Teknologi Kejuruteraan  '),(28,'3765','Information and Communication Technology'),(29,'3766','Pengurusan Makanan'),(30,'3767','Pengajian Pakaian'),(31,'4531','Physics'),(32,'4541','Chemistry'),(33,'4551','Biology'),(34,'4561','Additional Science'),(35,'4571','Pengetahuan Sains Sukan'),(36,'4581','Applied Science'),(37,'5226','Tasawwur Islam'),(38,'5227','Pendidikan Al-Quran dan Al-Sunnah'),(39,'5228','Pendidikan Syariah Islamiah'),(40,'6351','Bahasa Cina'),(41,'6354','Bahasa Tamil'),(42,'6355','English for Science and Technology'),(43,'6356','Bahasa Iban'),(44,'6362','Bahasa Arab (Komunikasi)'),(45,'7101','Pembinaan Domestik'),(46,'7102','Membuat Perabot'),(47,'7103','Kerja Paip Domestik'),(48,'7104','Pendawaian Domestik'),(49,'7105','Kimpalan Arka dan Gas'),(50,'7106','Menservis Automobil'),(51,'7107','Menservis Motosikal'),(52,'7108','Menservis Peralatan Penyejukan dan Penyamanan Udara'),(53,'7109','Menservis Peralatan Elektrik Domestik'),(54,'7201','Rekaan dan Jahitan Pakaian'),(55,'7202','Katering dan Penyajian '),(56,'7203','Pemprosesan Makanan'),(57,'7204','Penjagaan Muka dan Dandanan Rambut'),(58,'7205','Asuhan dan Pendidikan Awal Kanak-Kanak'),(59,'7206','Gerontologi Asas dan Perkhidmatan Geriatrik'),(60,'7301','Landskap dan Nurseri'),(61,'7302','Akuakultur dan Haiwan Rekreasi'),(62,'7303','Tanaman Makanan'),(63,'7401','Seni Reka Tanda'),(64,'7402','Hiasan Dalaman Asas'),(65,'7403','Produksi Multimedia'),(66,'7404','Grafik Berkomputer'),(67,'8101','Bahan Binaan'),(68,'8102','Teknologi Binaan'),(69,'8201','Prinsip Elektrik dan Elektronik'),(70,'8202','Aplikasi Elektrik dan Elektronik'),(71,'8301','Pemesinan Berkomputer'),(72,'8302','Amalan Bengkel Mekanikal'),(73,'8311','Penyejukan'),(74,'8312','Penyamanan Udara'),(75,'8321','Automotif Kenderaan'),(76,'8322','Automotif Elektrik dan Disel'),(77,'8331','Kimpalan Arka'),(78,'8332','Kimpalan Gas'),(79,'8401','Fundamentals of Programming '),(80,'8402','Programming and Development Tools '),(81,'8501','Membuat Pakaian'),(82,'8502','Pola Pakaian'),(83,'8511','Roti dan Masakan Yis'),(84,'8512','Patisserie'),(85,'8521','Persolekan'),(86,'8522','Dandanan Rambut'),(87,'8531','Pengajian Perkembangan Kanak-kanak'),(88,'8532','Perkhidmatan Awal Kanak-kanak'),(89,'8541','Penyediaan Masakan Barat dan Timur'),(90,'8542','Penyajian Makanan dan Minuman'),(91,'8701','Aplikasi Komputer Dalam Perniagaan'),(92,'8702','Perakaunan Perniagaan'),(93,'8703','Teknologi Pejabat Perniagaan'),(94,'8811','Teknologi Bengkel Mesin'),(95,'8812','Kerja Menggegas Dan Melarik'),(96,'8813','Lukisan Geometri &amp; Mesin'),(97,'8814','Teknologi Binaan Bangunan'),(98,'8815','Kerja Kayu Dan Bata'),(99,'8816','Lukisan Geometri &amp; Binaan Bangunan'),(100,'8817','Teknologi Elektrik'),(101,'8818','Pemasangan Dan Kawalan Elekrik'),(102,'8819','Lukisan Geometri &amp; Elektrik'),(103,'8820','Teknologi Elektronik'),(104,'8821','Menservis Radio Dan Tv'),(105,'8822','Lukisan Geometrik &amp; Elekronik'),(106,'8823','Teknologi Kimpalan &amp; Fabrikasi Logam'),(107,'8824','Kerja Kimpalan'),(108,'8825','Lukisan Geometri &amp; Fabrikasi Logam'),(109,'8826','Teknologi Automatif'),(110,'8827','Auto Asas (Kerja Elektrik Dan Diesel)'),(111,'8828','Lukisan Geometri &amp; Automatif'),(112,'8829','Teknologi Penyejukan &amp; Penyamanan Udara'),(113,'8830','Memasang &amp; Menservis Penyejukan &amp; Penyamanan Udara'),(114,'8831','Lukisan Geometri &amp; Penyamanan Udara'),(115,'8861','Teknologi Katering'),(116,'8862','Penyediaan Dan Perkhidmatan Makanan'),(117,'8881','Pengeluaran Tanaman'),(118,'8882','Pengeluaran Ternakan'),(119,'8883','Hortikultur Hiasan &amp; Lanskap'),(120,'8884','Kejenteraan Ladang'),(121,'8885','Pengurusan Ladang'),(122,'9216','Kesusasteraan Cina'),(123,'9217','Kesusasteraan Tamil'),(124,'9221','Bible Knowledge'),(125,'9303','Bahasa Perancis'),(126,'9378','Bahasa Punjabi'),(127,'9999','Mata Pelajaran Lain Selain Di Atas'),(128,'8863','TEKNOLOGI REKAAN FESYEN &amp; MEMBUAT PAKAIAN'),(129,'3768','FUNDAMENTALS OF PROGRAMMING'),(130,'3769','PROGRAMMING &amp; DEVELOPMENT TOOLS'),(131,'8601','Kejenteraan Pertanian'),(132,'8602','Hortikultur Hiasan dan Landskap'),(133,'8603','Pengeluaran Tanaman'),(134,'8604','Pemprosesan Hasil Pertanian'),(135,'2612','Komunikasi Visual'),(136,'2613','Seni Halus'),(137,'2614','Rekabentuk'),(138,'2622','Muzik'),(139,'2631','Tari'),(140,'2641','Teater'),(141,'8401','Fundamentals of Programming '),(142,'8402','Programming and Development Tools '),(143,'3765','Information and Communication Technology'),(144,'6357','Bahasa Kadazandusun'),(145,'8551','Pelancongan dan Rekreasi'),(146,'8552','Asas Kemahiran Pelancongan'),(147,'8605','Pengeluaran Ternakan');
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
